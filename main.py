@@ -101,7 +101,7 @@ with tab2:
     
     # 6. Selectbox (Interacción para elegir Zona)
     zonas = df['restaurant_zone'].unique()
-    zona_sel = st.selectbox("Selecciona Zona de Restaurante:", zones)
+    zona_sel = st.selectbox("Selecciona Zona de Restaurante:", zonas)
     
     # Filtramos datos SOLO para esa zona
     df_zona = df_filtered[df_filtered['restaurant_zone'] == zona_sel]
