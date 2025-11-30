@@ -156,7 +156,7 @@ with tab3:
             
         ax4.set_xlabel("Distancia (km)")
         ax4.set_ylabel("Tiempo de Entrega (min)")
-        ax4.legend(title=criterio) # Muestra la leyenda automática
+        ax4.legend(title=selec_dist_tiempo) # Muestra la leyenda automática
         ax4.grid(True, alpha=0.3)
         
         st.pyplot(fig4)
