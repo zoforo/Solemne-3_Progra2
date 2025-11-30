@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
 
 # --- CONFIGURACIÓN DE PÁGINA ---
@@ -184,6 +185,7 @@ with tab3:
     # --- GRÁFICO 6: BAR PLOT (Pedidos por Zona Restaurante) ---
     with col_z2:
          st.subheader("Pedidos por Zona (Restaurante)") 
+        st.subheader("Pedidos por Zona (Restaurante)") 
         datos_grafico = df["restaurant_zone"].value_counts() #Lee df y ordena
         
         
