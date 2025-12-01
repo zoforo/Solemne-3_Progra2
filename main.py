@@ -177,6 +177,5 @@ with tab3:
         ax6.set_title("Pedidos por Zona")
         ax6.set_ylabel("Cantidad")
         st.pyplot(fig6, use_container_width=False) #A parte de plotear evita que el gráfico se estire según la página
-        st.write("Detalle de los datos:", datos_grafico) #Tabla de datos numérica
         with st.expander("Ver datos detallados de Pedidos por Zona(Restaurante)"):
             st.dataframe(datos_grafico)
