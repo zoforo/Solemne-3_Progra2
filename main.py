@@ -72,6 +72,9 @@ with tab1: #Esto sirve para trabajar dentro de la 'tab1'
             ax2.barh(df_weather.index, df_weather.values, color='teal') #.barh crea el gráfico de barra horizontal, .index son las etiquetas (clima) y .values son los números (minutos de delivery)
             ax2.set_xlabel("Minutos Promedio")
             st.pyplot(fig2)
+    st.subheader("Detalle de los Datos")
+    tabla= df.groupby("restaurant_zone")["order_id"].count().sort_values()
+    
 
 with tab2: #Trabajando dentro del tab2
     st.subheader("Rendimiento por Vehículo en Zonas Específicas")
